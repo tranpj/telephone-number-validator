@@ -1,0 +1,90 @@
+:root {
+    /*colours*/
+    --yellow: #fad02c;
+    --black: rgba(40, 33, 32, 0.7);
+    --dark-blue: #333652;
+    --pewter: #e9eaec;
+}
+
+body {
+    background-color: var(--dark-blue);
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/d/d4/Phone_communication_icon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 90vh;
+    font-family: helvetica;
+    overflow: auto;
+}
+
+#input-div,
+#results-div {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--black);
+    border: 1px solid var(--yellow);
+    border-radius: 10px;
+    color: var(--pewter);
+    margin: 10px;
+    padding: 10px;
+    max-width: 480px;
+}
+
+#input-div {
+    height: 300px;
+}
+
+#results-div {
+    display: none;
+    overflow: auto;
+    max-height: 300px;
+}
+
+main>h1 {
+    width: 100%;
+    text-align: center;
+    color: var(--pewter);
+}
+
+label {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    height: 50px;
+    text-align: center;
+    background-color: transparent;
+    color: var(--pewter);
+    border: 1px solid var(--pewter);
+}
+
+#buttons {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 5%;
+    width: 100%;
+    height: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: transparent;
+    color: var(--pewter);
+    border: 1px solid var(--pewter);
+    outline: none;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+button:hover {
+    cursor: pointer;
+}
